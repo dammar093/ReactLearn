@@ -1,0 +1,52 @@
+.wrapper {
+  width: 100%;
+  background-color: white;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.wrapper h2 {
+  color: rgb(41, 38, 38);
+  text-align: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+form input {
+  width: 300px;
+  padding: 8px 20px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+form button {
+  padding: 8px 20px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.todos ul li {
+  color: rgb(25, 23, 23);
+  list-style: none;
+  background-color: darkblue;
+  color: white;
+  border-radius: 10px;
+  width: 400px;
+  margin: 10px 0;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.todos ul li button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
