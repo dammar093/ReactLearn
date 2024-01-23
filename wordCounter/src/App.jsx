@@ -1,34 +1,40 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [countWord , setCountWord] = useState(0);
+  const [countChar , setCountChar] = useState(0);
+  const [text,setText] = useState('');
 
+  const handelInput=(e)=>{
+
+    setText(e.target.value);
+    setCountChar(text.length)
+    let word = text.split(' ')
+    console.log(word);
+    setCountWord(word.length)
+    
+  }
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="wrapper">
+      <h2>Word Counter</h2>
+      <div className="wordCounter">
+       <div className="inputWord">
+        <textarea id="textInput" cols="30" rows="10"
+        value={text}
+        onChange={handelInput}
+        >
+
+        </textarea>
+       </div>
+       <div className="result">
+        <h2>Number of words: { countWord} </h2>
+        <h2>Number of charecters: { countChar} </h2>
+       </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+    </div>
   )
 }
 
