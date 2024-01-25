@@ -1,0 +1,13 @@
+.navBar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  width: 600px;
+  height: 50px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 30px;
+}

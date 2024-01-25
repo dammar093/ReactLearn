@@ -1,0 +1,46 @@
+.cart {
+  width: 600px;
+  margin: 10px auto;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.cartItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  gap: 10px;
+}
+.cartItems img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.cartItems h2 {
+  font-size: 14px;
+  color: #444;
+}
+
+.cartItems p {
+  color: teal;
+}
+.cartItems button {
+  background-color: #444;
+  color: white;
+  font-size: 16px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.remove {
+  background-color: transparent !important;
+}
+.cartItems input {
+  width: 40px;
+  text-align: center;
+}

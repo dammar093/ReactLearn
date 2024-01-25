@@ -1,0 +1,39 @@
+.product {
+  width: 200px;
+  height: 290px;
+  /* background-color: red; */
+  overflow: hidden;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+.image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.details {
+  padding: 0px 10px;
+}
+.details h2 {
+  font-size: 16px;
+  font-weight: 500;
+  width: 200px;
+  overflow: hidden;
+  color: #444;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.details p {
+  color: teal;
+}
+button {
+  color: white;
+  background-color: blue;
+  padding: 4px 6px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
