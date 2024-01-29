@@ -1,0 +1,24 @@
+p {
+  background-color: rgb(134, 227, 141);
+  padding: 10px 9px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 450px;
+}
+
+.input {
+  display: none;
+}
+.showInput {
+  display: flex;
+  width: 200px;
+}
+.todo {
+  display: none;
+}
+.showTodo {
+  display: flex;
+}
+span {
+  cursor: pointer;
+}
