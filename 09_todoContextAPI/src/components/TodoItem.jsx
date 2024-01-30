@@ -28,6 +28,7 @@ function TodoItem({ todo }) {
               onChange={toggleCopleted}
 
           />
+          
           <input
               type="text"
               className={`border outline-none w-full bg-transparent rounded-lg ${

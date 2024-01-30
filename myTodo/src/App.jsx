@@ -19,11 +19,11 @@ function App() {
   }
   
   const editTodo = (id,todo) =>{
-     
+       setTodos((prevTodo)=>prevTodo.map((todo)=>todo.id === id ? todo: prevTodo))
   }
   
   const toggleTodo = (id) =>{
-
+    setTodos((prev)=> prev.map((prevTodo)=>prevTodo.id === id ? { ...prevTodo,completed:!prevTodo.completed} : prevTodo))
   }
 
   return (
